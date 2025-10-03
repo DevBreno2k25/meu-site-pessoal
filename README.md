@@ -1,2 +1,2 @@
 # meu-site-pessoal
-Meu primeiro web site
+Meu first web site with CSS and HTML
