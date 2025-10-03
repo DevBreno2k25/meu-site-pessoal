@@ -1,0 +1,330 @@
+
+  h1 {
+    color: rgb(4, 4, 4);
+    font-family: "Arial", sans-serif;
+  }
+  p {
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+  }
+  body {
+    background-color: rgb(242, 238, 238);
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid rgb(7, 7, 7);
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+  }
+  a:hover {
+    color: rgb(70, 68, 68);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(16, 15, 15);
+  }
+
+  .apresentacao {
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Arial", sans-serif;
+    padding: 10px 15px;
+    background-color: rgb(242, 238, 238);
+  }
+  h3 {
+    color: rgb(68, 67, 67);
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+  }
+
+  .Eu {
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Arial", sans-serif;
+    padding: 10px 15px;
+    background-color: rgb(242, 238, 238);
+  }
+  .dev {
+    padding: 20px 55px;
+  }
+
+  .meu-botao {
+    background-color: #4c5259;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .meu-botao:hover {
+    background-color: #ffffff;
+    /* azul mais escuro ao passar o mouse */
+  }
+
+  header {
+    background-color: #212020;
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    /* deixa redondo */
+    object-fit: cover;
+    /* corta pra caber certinho */
+  }
+
+  /* Menu */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+
+    /* espaço entre os itens */
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+  nav ul li a:hover {
+    color: #333533;
+    /* muda cor no hover */
+  }
+  .menu {
+    text-align: center;
+    margin-top: 30px;
+    font-family: poppins, sans-serif;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .meu-botao2 {
+    background-color: #4c5259;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .meu-botao2:hover {
+    background-color: #ffffff;
+  }
+  footer {
+    background: #212020;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .social a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Cores oficiais */
+  .social a.github {
+    background: #333;
+  }
+
+  .social a.instagram {
+    background: #e1306c;
+  }
+
+  .social a.whatsapp {
+    background: #25d366;
+  }
+
+  .social a:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+  }
+  .pfooter {
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    padding: 15px 10px;
+    margin: 0;
+  }
+
+  .menu2 {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0px;
+    display: flex;
+    gap: 25px;
+    /* espaço entre os itens */
+  }
+
+  .apps-header a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px 10px;
+    margin-top: 15px;
+    /* margin-left: 15px; */
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Cores oficiais */
+  .apps-header a.github {
+    background: #333;
+  }
+
+  .apps-header a.instagram {
+    background: #e1306c;
+  }
+
+  .apps-header a.whatsapp {
+    background: #25d366;
+  }
+
+  .apps-header a:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+  }
+
+  main {
+    /* flex: 1;         ocupa o resto do espaço */
+    padding: 20px;
+  }
+
+  main section {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  aside {
+    width: 150px;
+    padding: 15px;
+    display: flex; /* ativa flex no aside */
+    flex-direction: column; /* itens empilhados verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+    padding: 20px;
+  }
+
+  aside.sidebar {
+    background: #222;
+    color: white;
+  }
+
+  .foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #4caf50;
+  }
+
+  aside h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  aside p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  aside h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #6f6c6c;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  aside a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0px 10px;
+    margin-top: 15px;
+    /* margin-left: 15px; */
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+  }
+  .apps-aside a.github {
+    background: #333;
+  }
+
+  .apps-aside a.instagram {
+    background: #e1306c;
+  }
+
+  .apps-aside a.whatsapp {
+    background: #25d366;
+  }
+
+  .apps-aside a:hover {
+    transform: scale(1.15);
+    opacity: 0.9;
+  }
+  .container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    padding: 15px;
+  }
+  .banner {
+    width: 100%; /* ocupa a largura da tela */
+    height: auto; /* mantém a proporção */
+    max-height: 500px; /* limita a altura */
+    object-fit: cover; /* corta a imagem se passar do limite */
+    padding: 0px 40px;
+  }
+

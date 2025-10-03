@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.html" />
+    <title>Sobre/Contato</title>
+    <style>
+       
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        p {
+            font-family: poppins, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h4 {
+            font-family: poppins, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #4c5259;
+        }
+
+        header {
+            background-color: #212020;
+            padding: 5px 30px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            font-family: "Arial", sans-serif;
+        }
+
+
+
+        .menu {
+            text-align: center;
+            margin-top: 30px;
+            font-family: poppins, sans-serif;
+            width: auto;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+
+        .logo {
+
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            /* deixa redondo */
+            object-fit: cover;
+            /* corta pra caber certinho */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 26px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            /* espaço entre os botões */
+        }
+
+        nav .menu-header {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(7, 7, 7);
+            /* cor de fundo do botão */
+            padding: 10px 20px;
+            border-radius: 25px;
+            /* deixa arredondado */
+            transition: background 0.3s;
+        }
+
+        nav .menu-header:hover {
+            background-color: #e9ebe9;
+            /* muda a cor ao passar o mouse */
+        }
+
+
+      
+
+
+        .apps-header a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0px 10px;
+            margin-top: 15px;
+            /* margin-left: 15px; */
+            border-radius: 50%;
+            color: white;
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Cores oficiais */
+        .apps-header a.github {
+            background: #333;
+        }
+
+        .apps-header a.instagram {
+            background: #e1306c;
+        }
+
+        .apps-header a.whatsapp {
+            background: #25d366;
+        }
+
+        .apps-header a:hover {
+            transform: scale(1.15);
+            opacity: 0.9;
+        }
+
+        nav a:hover {
+            color: #d1c4e9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 15px 20px;
+        }
+
+        #contato {
+            margin-top: 40px;
+        }
+
+        section {
+            background: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #4a148c;
+            padding-bottom: 8px;
+        }
+
+        .sobre p {
+            line-height: 1.6;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        form button {
+            background-color: #4c5259;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: poppins, sans-serif;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background: #e6e5e7;
+        }
+
+        footer {
+            background: #212020;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .social a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 10px;
+            border-radius: 50%;
+            color: white;
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Cores oficiais */
+        .social a.github {
+            background: #333;
+        }
+
+        .social a.instagram {
+            background: #e1306c;
+        }
+
+        .social a.whatsapp {
+            background: #25d366;
+        }
+
+        .social a:hover {
+            transform: scale(1.15);
+            opacity: 0.9;
+        }
+
+        .pfooter {
+            color: white;
+            font-family: "Arial", sans-serif;
+            font-size: 14px;
+            padding: 15px 10px;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/Users/lucasantos/Downloads/logo/logo.png" class="logo" alt="Logo do site" width="75" height="75" />
+
+        <nav class="menu">
+            <ul>
+
+                <li> <a href="index.html" class="menu-header">Home</a></li>
+                <li> <a href="#sobre" class="menu-header">About me</a></li>
+                <li> <a href="#contato" class="menu-header">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="apps-header">
+            <a href="https://github.com/DevBreno2k25" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/nk.santoszl" target="_blank" class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5511982944152" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="sobre">
+        <h2>Sobre mim</h2>
+        <h4>Olá! Eu sou o Breno, e este é um espaço para contar um pouco sobre mim. Tenho 15 anos, moro em São Paulo-SP,
+        e estou no ensino médio. Estou aprendendo desenvolvimento web e adoro criar projetos interessantes.
+        </h4>
+            <ul class="info-list">
+                <li><strong>Nome:</strong> Breno Santos</li>
+                <li><strong>Profissão:</strong> Estudante / Desenvolvedor</li>
+                <li><strong>Local:</strong> São Paulo-SP</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <h4>Entre em contato preenchendo o formulário abaixo:</h4>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="pfooter">© 2025 Breno Santos. Todos os direitos reservados.</p>
+        <div class="social">
+            <a href="https://github.com/DevBreno2k25" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/nk.santoszl" target="_blank" class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5511982944152" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
