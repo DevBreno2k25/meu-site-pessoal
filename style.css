@@ -586,7 +586,8 @@ h1, h2, h3, p, a, li {
 
   .video-section iframe {
     width: 100%;
-    height: auto;
+    height: 180px;
+    margin-top: 15px;
   }
   .video-section :hover {
     transform: scale(1.05);
