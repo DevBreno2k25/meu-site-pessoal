@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="index.html" />
     <title>Sobre/Contato</title>
     <style>
-       
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -95,7 +94,7 @@
         }
 
 
-      
+
 
 
         .apps-header a {
@@ -255,11 +254,16 @@
         @media (max-width: 600px) {
             header {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
+                text-align: center;
             }
 
-            nav {
+            nav.menu {
                 margin-top: 10px;
+                gap: 10px;
+            }
+            a.menu-header  {
+                gap: 10px;
             }
         }
     </style>
@@ -273,8 +277,8 @@
             <ul>
 
                 <li> <a href="index.html" class="menu-header">Home</a></li>
-                <li> <a href="#sobre" class="menu-header">About me</a></li>
-                <li> <a href="#contato" class="menu-header">Contact</a></li>
+                <li> <a href="#sobre" class="menu-header">Sobre mim</a></li>
+                <li> <a href="#contato" class="menu-header">Contato</a></li>
             </ul>
         </nav>
 
@@ -288,10 +292,11 @@
 
     <main>
         <section id="sobre" class="sobre">
-        <h2>Sobre mim</h2>
-        <h4>Olá! Eu sou o Breno, e este é um espaço para contar um pouco sobre mim. Tenho 15 anos, moro em São Paulo-SP,
-        e estou no ensino médio. Estou aprendendo desenvolvimento web e adoro criar projetos interessantes.
-        </h4>
+            <h2>Sobre mim</h2>
+            <h4>Olá! Eu sou o Breno, e este é um espaço para contar um pouco sobre mim. Tenho 15 anos, moro em São
+                Paulo-SP,
+                e estou no ensino médio. Estou aprendendo desenvolvimento web e adoro criar projetos interessantes.
+            </h4>
             <ul class="info-list">
                 <li><strong>Nome:</strong> Breno Santos</li>
                 <li><strong>Profissão:</strong> Estudante / Desenvolvedor</li>
