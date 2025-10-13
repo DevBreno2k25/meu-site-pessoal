@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-</html>
-<meta charset="UTF-8" />
+
+
 
 <head>
+    <meta charset="UTF-8" />
     <title>My personal website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 
@@ -25,6 +28,9 @@
             <li><a href="index.html" class="menu">🇧🇷 Português</a></li>
         </ul>
     </nav>
+    <button id="mobile-btn" class="mobile-btn">
+        <i class="fas fa-bars"></i>
+    </button>
 
     <div class="apps-header">
         <a href="https://github.com/DevBreno2k25" target="_blank" class="github"><i class="fab fa-github"></i></a>
@@ -111,5 +117,13 @@
         <a href="https://wa.me/5511982944152" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
     </div>
 </footer>
+<script>
+    const btnMobile = document.getElementById('mobile-btn');
+    const nav = document.querySelector('header nav');
+
+    btnMobile.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
 </body>
-</body>
+</html>
