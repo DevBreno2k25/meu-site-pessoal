@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-</html>
+
 <meta charset="UTF-8" />
 
 <head>
+    <meta charset="UTF-8" />
     <title>Meu mini site pessoal</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -26,6 +27,10 @@
             <li><a href="En-index.html" class="menu">🇺🇸 English</a></li>
         </ul>
     </nav>
+    <button id="mobile-btn" class="mobile-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
 
     <div class="apps-header">
         <a href="https://github.com/DevBreno2k25" target="_blank" class="github"><i class="fab fa-github"></i></a>
@@ -65,28 +70,35 @@
 
         </section>
 
-        <section>
-            <div class="dev">
-                <h3>Desenvolvedor web</h3>
-                <span>
-                    <nav>
-                        <div>
-                            <ul class="menu2">
 
-                                <li class="xpto"> <a href="index.html" class="meu-botao">Home</a> </li>
-                                <li id="xpto2"><a href="Sobre+contato.html" class=" meu-botao">Sobre</a></li>
-                                <li><a href="Sobre+contato.html" class="meu-botao">Contato</a></li>
-                                <li><a href="https://linkedin.com/in/breno-santos-7b2261388" class="meu-botao"
-                                        class="botao-azul" target="_blank"> Linkedin</a></li>
-                                <li><a href="https://instagram.com/nk.santoszl" class="meu-botao" class="botao-laranja"
-                                        target="_blank"> Instagram</a></li>
 
-                            </ul>
-                        </div>
-                    </nav>
-                </span>
+        <h3>Desenvolvedor web</h3>
+        <section class="nav-menu2">
+            <!-- Menu normal (desktop) -->
+            <nav class="menu-desktop">
+                <ul class="menu2">
+                    <li><a href="index.html" class="meu-botao">Home</a></li>
+                    <li><a href="Sobre+contato.html" class="meu-botao">Sobre</a></li>
+                    <li><a href="Sobre+contato.html" class="meu-botao">Contato</a></li>
+                    <li><a href="https://linkedin.com/in/breno-santos-7b2261388" class="meu-botao"
+                            target="_blank">Linkedin</a></li>
+                    <li><a href="https://instagram.com/nk.santoszl" class="meu-botao" target="_blank">Instagram</a></li>
+                </ul>
+            </nav>
+
+            <!-- Vídeo para mobile -->
+            <div class="video-section">
+                <h2>Veja o video que iniciou meus estudos</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tdFXO52FiVg?si=_VwRc8h16gBEVVnA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
+
+
+
+
 
         <section>
             <div class="apresentacao">
@@ -111,5 +123,15 @@
         <a href="https://wa.me/5511982944152" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
     </div>
 </footer>
+<script>
+    const btnMobile = document.getElementById('mobile-btn');
+    const nav = document.querySelector('header nav');
+
+    btnMobile.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
 </body>
-</body>
+
+</html>
