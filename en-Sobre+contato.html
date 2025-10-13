@@ -251,21 +251,27 @@
         }
 
         @media (max-width: 600px) {
-            header {
+             header {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
+                text-align: center;
             }
 
-            nav {
+            nav.menu {
                 margin-top: 10px;
+                gap: 10px;
+            }
+            a.menu-header  {
+                gap: 10px;
             }
         }
+        
     </style>
 </head>
 
 <body>
     <header>
-        <img src="/Users/lucasantos/Downloads/logo/logo.png" class="logo" alt="Logo do site" width="75" height="75" />
+        <img src="images/logo.png" class="logo" alt="Logo do site" width="75" height="75" />
 
         <nav class="menu">
             <ul>
@@ -288,8 +294,8 @@
         <section id="sobre" class="sobre">
             <h2>About me</h2>
             <h4>Hey! I'm Breno, and this is a space to tell you a little about myself. I'm 15 years old, I live in São
-            Paulo-SP,
-            and I'm a high school student. I'm learning web development and I love creating interesting projects.
+                Paulo-SP,
+                and I'm a high school student. I'm learning web development and I love creating interesting projects.
             </h4>
             <ul class="info-list">
                 <li><strong>Name:</strong> Breno Santos</li>
