@@ -328,3 +328,269 @@
     padding: 0px 40px;
   }
 
+  /* ====== SEU CSS ORIGINAL ====== */
+/* (mantém tudo que você já mandou acima) */
+
+/* ====== AJUSTES DE RESPONSIVIDADE ====== */
+
+/* Tablets (até 1024px) */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  main section {
+    padding: 10px;
+  }
+
+  .banner {
+    padding: 0;
+  }
+}
+
+/* Celulares (até 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header img.logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .apps-header {
+    margin-top: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  aside {
+    width: 100%;
+    align-items: center;
+  }
+
+  .foto-perfil {
+    width: 100px;
+    height: 100px;
+  }
+
+  .banner {
+    width: 100%;
+    padding: 0;
+    max-height: 300px;
+  }
+
+  .meu-botao {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .menu2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main section {
+    padding: 10px;
+  }
+
+  .dev {
+    padding: 10px;
+  }
+
+  .apresentacao img {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .meu-botao {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .social a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+
+  .apps-header a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+
+  .pfooter {
+    font-size: 12px;
+  }
+  
+}
+
+/* Monitores grandes (acima de 1400px) */
+@media screen and (min-width: 1400px) {
+  main section {
+    max-width: 1200px;
+  }
+
+  .banner {
+    max-height: 600px;
+  }
+} 
+
+/* ===== MENU HAMBÚRGUER ===== */
+
+.mobile-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Menu escondido no mobile */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+    width: 100%;
+    background-color: #212020;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .mobile-btn {
+    display: block;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+
+}
+
+/* ===== AJUSTE AUTOMÁTICO DE IMAGENS E FONTES ===== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, p, a, li {
+  word-wrap: break-word;
+}
+
+/* Reduz fonte suavemente em telas menores */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2, h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu2 {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+/* ===== Mostrar/Esconder dependendo da tela ===== */
+
+/* Por padrão: desktop mostra o menu e esconde o vídeo */
+.menu-desktop {
+  display: block;
+}
+
+.video-section {
+  display: none;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Mobile (até 768px): esconde o menu e mostra o vídeo */
+@media screen and (max-width: 768px) {
+  .menu-desktop {
+    display: none;
+  }
+  h2{
+    font-family: poppins, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .video-section {
+    display: block;
+  }
+
+  .video-section iframe {
+    width: 100%;
+    height: auto;
+  }
+  .video-section :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+}
