@@ -251,21 +251,59 @@
         }
 
         @media (max-width: 600px) {
-             header {
+            header {
+                display: flex;
                 flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                /* centraliza verticalmente também */
+                text-align: center;
+            }
+
+
+
+            nav.menu li {
+                list-style: none;
+                padding: 0;
+                margin-right: 35px;
+                display: flex;
+                flex-direction: column;
+                /* em coluna no celular */
+                gap: 10px;
+                /* <-- aqui controla o espaçamento entre os links */
+            }
+
+            nav.menu {
+                width: 100%;
+                /* ocupa toda a largura do header */
+                display: flex;
+                justify-content: center;
+                /* centraliza o conteúdo dentro */
                 align-items: center;
                 text-align: center;
             }
 
-            nav.menu {
-                margin-top: 10px;
+            nav.menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0 auto;
+                /* centraliza o ul dentro do nav */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 gap: 10px;
             }
-            a.menu-header  {
-                gap: 10px;
+            .logo {
+                margin-right: 35px;
             }
+            .apps-header {
+                margin-right: 25px;
+                /* espaço entre o menu e os ícones */
+            }
+
+
+
         }
-        
     </style>
 </head>
 
