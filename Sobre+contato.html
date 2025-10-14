@@ -258,13 +258,19 @@
                 text-align: center;
             }
 
-            nav.menu {
-                margin-top: 10px;
+
+            nav.menu li {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                /* em coluna no celular */
+                align-items: center;
                 gap: 10px;
+                /* <-- aqui controla o espaçamento entre os links */
             }
-            a.menu-header  {
-                gap: 10px;
-            }
+
         }
     </style>
 </head>
